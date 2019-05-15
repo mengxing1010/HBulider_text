@@ -1,0 +1,72 @@
+body{
+	margin: 0;
+	padding: 0;;
+}
+ul {
+	padding: 0;
+	margin: 0;
+	
+}
+ul li{
+	list-style: none ;
+}
+.topheader{
+	background-color: #808080;
+	/*position: fixed;*/
+	top: 0;
+	z-index: 999;
+	height: 48px;
+	/*margin: 6px 4px 10px;*/
+}
+.topheader ul li{
+	/*position: fixed;*/
+	float: left;
+    width: 180px;
+    /*margin: 10px auto;*/
+    height: 40;
+    line-height: 40px;
+    text-align: center;
+    
+}
+
+.fudong{
+	padding:0;
+	margin: 0;
+	width: 1000px;
+	/*overflow: hidden;*/
+}
+.fudong::after{
+	content: ".";
+	clear: both;
+	display: block;
+	visibility: hidden;
+	height: 0;
+}
+.clearfix::after{
+	content: ".";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+#p1{
+	background: red;
+	width: 150px;
+	height: 200px;
+margin: 0;
+float: left;
+}
+#p2{
+	background: blueviolet;
+	width: 230px;
+	height: 100px;
+margin: 0;
+float: right;
+}
+#p3{
+	background:yellowgreen;
+	width: 600px;
+	height: 50px;
+margin: 0;
+/*clear: both; /*清楚前面左浮动的元素*/*/
+}

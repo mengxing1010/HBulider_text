@@ -1,0 +1,93 @@
+body{
+	width: 1000px;
+	text-align: center;
+}
+/*ul li, table{
+	list-style-type: none;
+}*/
+input[disabled]{
+	cursor:not-allowed;
+	cursor: -ms-not-allowed;
+}
+a[href="#"]{
+	color: red;
+	font-size: 22px;
+}
+ul#list>li{
+	color: green;
+	font-size: 20px;
+}
+ul#list>* li{
+	color: red;
+}
+ul#list>li:first-child{
+	color: blue;
+}
+ul#list>li:nth-child(2){
+	font-size: 16px;
+}
+ul#list>li:last-child{
+	font-size: 12px;
+}
+table tbody> tr:nth-child(2n+1){
+	color: red;
+}
+a:active{
+	color: teal;
+}
+p:target{
+    background-color: yellow;
+}
+strong>span{
+	font-weight: bold;color: red;
+}
+p::first-letter{
+	font-weight: bold;color: red;
+}
+h3::before,h3::after{
+	content: "--";
+	color: red;
+}
+.info .inc{
+	background-color: #616161;
+	text-align: justify;
+}
+.info .incc{
+	text-align:end;
+}
+
+.box{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.box img{
+	visibility: hidden;
+}
+
+.h-box{
+	border: 1px solid red;
+	margin: 30px auto;
+	padding: 20px 10px 20px ;
+}
+.h-header, .h-footer{
+	padding: 0.5em;
+	color: white;
+	background-color: gray;
+	clear: both;
+	
+}
+.h-header .h-name{
+	font-family: "arial, helvetica, sans-serif";
+	font-size: 22px;
+}
+.h-left{
+	float: left;
+	width: 200px;
+	margin: 0;
+	padding: 1em;
+}
+.h-right{
+	margin-left: 230px;
+	border-left: 1px solid gray;
+	padding: 1em;
+}

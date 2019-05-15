@@ -1,0 +1,51 @@
+*{
+	margin: 0;padding: 0;
+}
+.container{
+	width: 1200px;margin: 0 auto;background-color: #E0E0E0;
+	display: flex;/*将垂直排列元素改为水平排列.*/
+	/*justify-content: center; /* 水平居中排放* 即使减少元素也依然居中排放*/*/
+}
+.box{
+	height: 100px;font-size: 50px;width: 100px;
+	
+}
+.box1{background: #bdc3cc;}
+.box2{background: #8A2BE2;}
+.box3{background: #16a022;}
+.box4{background: #34ff66;}
+.box5{background: #f1c400;}
+.box6{background: #e67e22;}
+.box7{background: #1abcff;}
+.box8{background: #3498dd;}
+.box9{background: #2eccaa;}
+.box10{background: #9b59bb;}
+.clearfix::after{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+.wrapper{
+	width:1100px;margin: 0 auto;background-color: #E0E0E0;
+}
+.col{
+	font-size: 50px;width: 70px;text-align: center;background-color: lightblue;
+
+float: left;margin-left: 20px;
+
+}
+/*浮动清除*/
+.row{
+	clear: both;
+}
+.col.span2{
+	width: 160px;
+}
+.col.span3{
+	width: 250px;
+}
+.col.span6{
+	width: 520px;
+}

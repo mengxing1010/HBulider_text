@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="img/pic_1.png" />
+		<title>01_10设计网页皮肤</title>
+	</head>
+	<body onload="colorload();">
+		<script type="text/javascript">
+			//检查是否支持localStorage
+			if (typeof localStorage ==='undefined') {
+				window.alert('不支持localStorage');
+			} else{
+				window.alert('支持');
+		
+			var storage=localStorage;
+			//设置DIV背景颜色为红色，并保存
+			function redSet(){
+				var value="red";
+				document.getElementById("divblock").style.backgroundColor=value;
+				window.localStorage.setItem("DivBackGroundColor",value);
+			}
+			//设置DIV背景为绿色，并保存
+			function greenSet () {
+				var value="green";
+				document.getElementById("divblock").style.backgroundColor=value;
+				window.localStorage.setItem("DivBackGroundColor",value);
+			}
+			//设置背景为蓝色，并保存
+			function blueSet () {
+				var value="blue";
+				document.getElementById("divblock").style.backgroundColor=value;
+				window.localStorage.setItem("DivBackGroundColor",value);
+			}
+			function colorload () {
+				document.getElementById("divblock").style.backgroundColor=window.localStorage.getItem("DivBackGroundColor");
+			}
+		   };
+			
+		</script>
+		
+		<section id="main">
+		<button id="redbutton" onclick="redSet()">Red</button>
+		<button id="greenbutton" onclick="greenSet()">Green</button>
+		<button id="bluebutton" onclick="blueSet()">Blue</button>
+		<div id="divblock" style="width: 500px;height: 500px;"></div>
+		</section>
+	</body>
+</html>
